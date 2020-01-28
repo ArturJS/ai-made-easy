@@ -27,3 +27,20 @@ Gotchas (когда выгодно и не очень использовать M
 We can do a lot more via AI (дальше перечень вещей)
 
 Thank you!
+
+(approximately 30-40 slides)
+
+## 28.01.2020 ideas
+// для студентов просто high-level overview ML
+// для Grid Dynamics сравнение JS vs Python реализаций (где на JS это полезнее, чем на Python)
+Оценка комментов в instagram, автоматический модератор (with comments removal), либо сбор метрик по комментам IMDB (english comments)
+
+https://github.com/tensorflow/tfjs-models/tree/master/posenet
+
+google presentation
+Python VS JS (when we need UI AI recognition)
+pre-trained model
+https://www.tensorflow.org/js/tutorials/conversion/import_keras - in order to convert from python to JS
+
+
+maybe https://github.com/appcypher/awesome-wasm-langs#python ?
