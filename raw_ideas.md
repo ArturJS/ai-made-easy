@@ -64,5 +64,5 @@ https://www.tensorflow.org/js/tutorials/conversion/import_keras - in order to co
 
 How to train JS model.
 
-
+Don't forget to mention the Loss function https://en.wikipedia.org/wiki/Loss_function
 
