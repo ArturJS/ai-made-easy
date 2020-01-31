@@ -10,7 +10,7 @@ AI в двух словах
 Как это может помочь в решении задач на frontend-e
 Краткий перечень наиболее распространенных AI алгоритмов
 Типы обучения AI
-кратко про Supervised learning
+** кратко про Supervised learning **
 кратко про Unsupervised learning
 кратко про Reinforcement learning
 
@@ -44,3 +44,25 @@ https://www.tensorflow.org/js/tutorials/conversion/import_keras - in order to co
 
 
 maybe https://github.com/appcypher/awesome-wasm-langs#python ?
+
+## 31.01.2020 ideas
+
+### Title: ML why do we need this on frontend?...
+
+
+https://transcranial.github.io/keras-js/#/imdb-bidirectional-lstm
+
+Add a couple of words about [Embeeding] -> [Bidirectional LSTM] -> [Dropout 0.5] -> [Dense]
+
+What does it mean exactly each enigmatic word from the above.
+### __!!!!!Python VS JS (when we need UI AI recognition) + Keras.js + TensorFlow.js__
+What about WASM + Python
+What are the restrictions of JS ML libs in comparison with Python ones?
+
+pre-trained model
+https://www.tensorflow.org/js/tutorials/conversion/import_keras - in order to convert from python to JS
+
+How to train JS model.
+
+
+
