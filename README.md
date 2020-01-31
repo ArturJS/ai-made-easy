@@ -1,6 +1,8 @@
 # ai-made-easy
 ... as cake 🍰
 
+## Presentation for Grid Dynamics
+https://docs.google.com/presentation/d/1T-v2AhRo1qbuJH01oDzYMXSz7DZARfBkRxkUGxUxRAU/edit#slide=id.g4dfce81f19_0_45
 
 ## Useful notes and links:
 
