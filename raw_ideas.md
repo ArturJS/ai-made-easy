@@ -66,3 +66,99 @@ How to train JS model.
 
 Don't forget to mention the Loss function https://en.wikipedia.org/wiki/Loss_function
 
+## 1.02.2020 ideas
+
+### __Python VS JS (when we need UI AI recognition) + Keras.js + TensorFlow.js__
+
+Useful links:
+
+Should I learn Machine Learning on Javascript or Python?
+https://www.freecodecamp.org/forum/t/should-i-learn-machine-learning-on-javascript-or-python/292000/3
+
+Machine Learning : Tensorflow v/s Tensorflow.js v/s Brain.js
+https://stackoverflow.com/questions/51797280/machine-learning-tensorflow-v-s-tensorflow-js-v-s-brain-js
+
+What is the performance like in TensorFlow.js vs Tensorflow? And how exactly does TensorFlow.js interface with the GPU?
+https://www.reddit.com/r/MachineLearning/comments/azwrcd/d_what_is_the_performance_like_in_tensorflowjs_vs/
+<br/><br/>
+#### Why should I learn TensorFlow.js?
+TensorFlow.js is an open-source hardware-accelerated JavaScript library for training and deploying machine learning models.
+
+ - Develop ML in the Browser
+ - Use flexible and intuitive APIs to build models from scratch using the low-level JavaScript linear algebra library or the high-level layers API.
+ - Run Existing models
+ - Use TensorFlow.js model converters to run pre-existing TensorFlow models right in the browser.
+ - Retrain Existing models
+ - Retrain pre-existing ML models using sensor data connected to the browser, or other client-side data.<br/>
+https://www.quora.com/Why-should-I-learn-TensorFlow-js
+<br/><br/>
+#### What is the difference between the TensorFlow JS and TensorFlow Python apart from programming language? Is there anything that the TensorFlow Python can do that the TensorFlow JS cannot or vice versa?
+https://www.quora.com/What-is-the-difference-between-the-TensorFlow-JS-and-TensorFlow-Python-apart-from-programming-language-Is-there-anything-that-the-TensorFlow-Python-can-do-that-the-TensorFlow-JS-cannot-or-vice-versa
+
+Comparison :
+
+- Speed : tf > tf.js. Tf.js is faster for small models, but when model becomes large, training becomes 10–15x slower. Read it here - [TensorFlow.js](https://js.tensorflow.org/faq/)
+- If you are from Deep Learning background, tf will always be better for you as you get lots of freedom over little things. But else tf.js will be better for deploying models.
+- Tensorboard. Ahh…the savior of millions. Tensorflow has tensorboard, tf.js doesn’t have direct support as its just an API. I can’t develop anything in tensorflow without watching the models behave, so I think tensorboard is an important part of tf that lacks in tf.js.
+- Usage : Tf.js is hell lot easier to use than tf itself.
+- GPU accelaration : It is not needed in tf.js as it will use the GPU access from browser itself. So it you dont have GPU, tf.js will use your integrated GPU. but tensorflow itself can’t use integrated intel graphics.
+- Cuda : you dont need to install CUDA for tf.js, which you will need for GPU support in tensorflow(which is a pain process to install).
+That’s probably it…Rest everything else is supported in both platforms.
+
+The only thing that tf.js can’t do is train a large model or even import a large model. Well TBH I dont think anyone using tf.js will need to use a large model.
+<br/><br/>
+#### Why doesn't anyone recommend JavaScript/Node.js as a language for machine learning or data analysis?
+https://www.quora.com/Why-doesnt-anyone-recommend-JavaScript-Node-js-as-a-language-for-machine-learning-or-data-analysis
+
+Because they don't really offer any benefit over the languages we already use.
+
+node.js is designed for building network applications. That really has nothing to do with ML/DA.
+
+There are a few most commonly used languages for ML, and they all offer things that are very valuable -
+MATLAB - readily available libraries, fast matrix operations, and flexibility
+Python - easy for prototyping and is fast enough for most applications with libraries like NumPy and SciPy
+C++ - for very high performance
+
+I would learn Python. It's a generally very useful language outside of ML as well.
+
+To be a competent developer you can't restrict yourself to a language or 2. Different jobs are best done in different languages, and JS is unsuitable for this application.
+
+Can you do some ML in JS if you REALLY wanted to? Sure. But that's like hitting nails with a screwdriver. It would just make your life a whole lot more difficult.
+
+
+<br/><br/>
+#### Is JavaScript a good choice for machine learning?
+https://www.quora.com/Is-JavaScript-a-good-choice-for-machine-learning
+
+First, JavaScript is not known to be a great programming language for Machine Learning. The most popular one is Python. There are great Python libraries for Machine Learning - Scikit Learn, Tensorflow, Keras, etc. Ideally, you should use Python to save your time.
+
+Second, while learning ML, or for that matter, any concept, your focus should be on the core idea - how it works and most importantly, why it works? Implementation in JavaScript or Python or any other programming language is just a matter of writing working code. The bottleneck is generally not on the coding piece of it. The bottleneck is on understanding the concept.
+
+In fact, a lot of people focus on the programming language, tools, frameworks, and what not. While the implementation is one of the pieces of the puzzle, it is far from being the crucial piece. The most important part is to understand the core concept and be able to solve problems using that concept.
+
+You can have a resume full of various programming languages and tools. However, if you are unable to come up with solutions to the interview problems thrown at you, your knowledge of 10 such programming languages is completely useless.
+
+As an exception, some companies working in a very specific domain indeed require you to be well versed with a particular programming language. For instance, all the high-frequency trading firms like Tower Research, APT Portfolio, Alphagrep, etc. expect you to have a firm grip on C/C++ programming since these companies almost exclusively use C/C++. Also, certain important concepts of C/C++ that are specific are often used in HFT firms. That’s why they prefer those with a deep knowledge of these programming languages.
+
+But, by-and-large, your focus should be on learning problem-solving and building concepts than on learning 10 different programming languages.
+<br/><br/>
+#### Машинное обучение с Node.js при помощи библиотеки Tensorflow.js
+https://habr.com/ru/company/piter/blog/432984/
+
+`Tensorflow.js начиналась как фронтендовая библиотека для работы в браузере, но в этом году в нее была добавлена экспериментальная поддержка Node.js. Таким образом, TensorFlow.js можно использовать и в бэкендовых приложениях на JavaScript, что совершенно избавляет нас от необходимости прибегать к Python.
+`
+
+`Использование TensorFlow.js с Node.js
+
+@tensorflow/tfjs – библиотека Core TensorFlow.js
+@tensorflow/tfjs-node — расширение TensorFlow.js Node.js
+@tensorflow/tfjs-node-gpu – расширение TensorFlow.js Node.js с поддержкой вычислений на GPU
+`
+
+
+<br/><br/>
+#### 
+
+
+<br/><br/>
+#### 
