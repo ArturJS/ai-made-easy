@@ -1,0 +1,20 @@
+{
+  "name": "ai-made-easy",
+  "version": "1.0.0",
+  "description": "AI made easy... as cake 🍰",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturJS/ai-made-easy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturJS/ai-made-easy/issues"
+  },
+  "homepage": "https://github.com/ArturJS/ai-made-easy#readme"
+}
