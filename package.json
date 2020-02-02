@@ -4,6 +4,7 @@
   "description": "AI made easy... as cake 🍰",
   "main": "index.js",
   "scripts": {
+    "start": "node ./src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/ArturJS/ai-made-easy/issues"
   },
-  "homepage": "https://github.com/ArturJS/ai-made-easy#readme"
+  "homepage": "https://github.com/ArturJS/ai-made-easy#readme",
+  "dependencies": {
+    "cross-env": "^7.0.0",
+    "puppeteer": "^2.1.0"
+  }
 }
