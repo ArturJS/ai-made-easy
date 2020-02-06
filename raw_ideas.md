@@ -192,3 +192,23 @@ New title
 - помечтаем насчет возможных перспектив ML + JS
 - quick recap
 ```
+
+## 5.02.2020 ideas
+
+Agenda:
+- results of JavaScript vs Python
+- Instagram bot
+- what to do next?
+
+Recap:
+ - raw draft for presentation
+ - split in into several large parts (each of them contains slide with quick overview)
+
+ - try to convert via onnx and via tensorflow + try out pyodide with pytorch
+ - neural network learning pitfalls when using js
+ - chrome extension for Instagram bot
+ - (should we mention about this chrome extension security?...)
+ - highlight bad comments in Instagram (only in case if it's not possible to remove comment)
+
+AI mentor notes: 
+ - 
