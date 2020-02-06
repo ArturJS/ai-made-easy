@@ -211,4 +211,38 @@ Recap:
  - highlight bad comments in Instagram (only in case if it's not possible to remove comment)
 
 AI mentor notes: 
- - 
+
+https://onnx.ai
+
+serving ml model
+
+1. получить список всех комментов в акканте
+
+2. триггернуть удаление комментария
+
+https://docs.google.com/presentation/d/19P78WHudaXpQuIP-P4nx1I5Dumd9mkWDUXI8An7dMwU/edit?usp=sharing
+
+План:
+1. стуктура в презентации
+
+2. упоминание всех тулов в презентации
+
+3. поднять модель sentiment analysis в js
+
+4. получать результаты для текста из массива в js
+
+4*. Спарсить комменты с IG
+
+5. запуск модели из python
+
+5*. конвертация модели из python
+
+https://github.com/xiamx/awesome-sentiment-analysis#nodejs
+
+https://github.com/abdulfatir/twitter-sentiment-analysis/blob/master/code/lstm.py
+
+LSTM
+
+Transformer, BERT (круче чем LSTM)
+
+meetings approximately at 19:00
