@@ -246,3 +246,13 @@ LSTM
 Transformer, BERT (круче чем LSTM)
 
 meetings approximately at 19:00
+
+
+## 8.02.2020 ideas
+
+Tell about sentiment analysis and how it works beneath the hood.
+
+About instagram chrome extension.
+1. Show the code that is responsible for neural network convertation from Python to JavaScript.
+2. The part where we connect the network to our application
+3. How do we perform comments removal.
