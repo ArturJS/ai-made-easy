@@ -256,3 +256,5 @@ About instagram chrome extension.
 1. Show the code that is responsible for neural network convertation from Python to JavaScript.
 2. The part where we connect the network to our application
 3. How do we perform comments removal.
+
+https://habr.com/ru/post/476052/
