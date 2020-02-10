@@ -258,3 +258,33 @@ About instagram chrome extension.
 3. How do we perform comments removal.
 
 https://habr.com/ru/post/476052/
+
+## 10.02.2020 ideas
+### What are the problems that cannot be solved by Machine Learning?
+
+https://www.quora.com/What-are-the-problems-that-cannot-be-solved-by-Machine-Learning
+
+Politics :-)  
+
+Uniquely human sensibilities like art, empathy, etc. are unlikely to be replicated by machine learning systems.
+----------------------------------------------------------------
+Creative works like graphics or game designing, Inventions (even the smallest ones) cannot be solved by using Machine Learning.Machine Learning requires data while inventing something requires analytics which currently artificial Intelligence lacks.Even though one can generate arts using GANs but Art is far away for AI to develop.
+
+Also Ethical/Emotional Intelligence problems are far away to be get solved by Artificial Intelligence.
+
+
+### What current problems can machine learning solve?
+
+ https://www.quora.com/What-current-problems-can-machine-learning-solve
+
+8 problems that can be easily solved by Machine Learning
+
+- Manual data entry.
+- Detecting Spam.
+- Product recommendation.
+- Medical Diagnosis.
+- Customer segmentation and Lifetime value prediction.
+- Financial analysis.
+- Predictive maintenance.
+- Image recognition (Computer Vision).
+https://www.google.com/search?bih=617&biw=414&client=safari&ei=x85iXMndF4GAsQXrmp6YCA&gs_l=mobile-gws-wiz-serp.12..33i22i29i30j33i299.7840.7840..9542...0.0..0.135.221.1j1......0....1j2.......0..41.UVMRvFDtax4&hl=en-US&oq=Current+problems+that+machine+learning+can+solve&q=Current+problems+that+machine+learning+can+solve
