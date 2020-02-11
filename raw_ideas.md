@@ -288,3 +288,21 @@ Also Ethical/Emotional Intelligence problems are far away to be get solved by Ar
 - Predictive maintenance.
 - Image recognition (Computer Vision).
 https://www.google.com/search?bih=617&biw=414&client=safari&ei=x85iXMndF4GAsQXrmp6YCA&gs_l=mobile-gws-wiz-serp.12..33i22i29i30j33i299.7840.7840..9542...0.0..0.135.221.1j1......0....1j2.......0..41.UVMRvFDtax4&hl=en-US&oq=Current+problems+that+machine+learning+can+solve&q=Current+problems+that+machine+learning+can+solve
+
+## 11.02.2020 ideas
+
+!!!russian version
+
+slide about myself with photo who i am and what i do. (for how long)
+
+
+title + picture => for most of the slides in this
+
+14 meeting with Vladimir
+
+17 February = 30 slides = title + picture + (your own text to talk about)
+
+
+js script with pre-trained neural network -> chrome extension -> convert model from python
+
+
