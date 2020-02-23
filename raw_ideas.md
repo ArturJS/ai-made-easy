@@ -306,3 +306,33 @@ title + picture => for most of the slides in this
 js script with pre-trained neural network -> chrome extension -> convert model from python
 
 
+## 12.02.2020
+
+------------------------
+__Краткий план__
+
+Сразу в бой! Список типичных проблем, а также инструменты, которые уже есть на JavaScript и Python.
+
+Копаем глубже в дебри осознания анализа настроений с точки зрения машинного обучения, а также архитектур нейронных сетей, которые позволяют решать данную задачу, а также их небольшое сравнение.
+
+В качестве примера рассмотрим приложение для  instagram, которое маркирует негативные комментарии, и кроме прочего, позволяющий удалить их.
+
+Выводы.
+------------------------
+
+========================
+## Install chrome extension
+http://www.adambarth.com/experimental/crx/docs/packaging.html
+
+To package an extension:
+
+Bring up the Extensions management page by going to this URL:<br>
+`chrome://extensions`<br>
+If Developer mode has a + by it, click the +.<br>
+Click the Pack extension button. A dialog appears.<br>
+In the Extension root directory field, specify the path to the extension's folder—for example, c:\myext. (Ignore the other field; you don't specify a private key file the first time you package a particular extension.)<br>
+Click OK. The packager creates two files: a .crx file, which is the actual extension that can be installed, and a .pem file, which contains the private key.<br>
+Do not lose the private key! Keep the .pem file secret and in a safe place. You'll need it later if you want to do any of the following:
+
+Update the extension
+Upload the extension to the Chrome Web Store
