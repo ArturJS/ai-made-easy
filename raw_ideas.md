@@ -338,6 +338,22 @@ See also for more genuine and delighful information:
  - https://www.wonderflow.co/blog/sentiment-analysis-examples
 
 
+## 25.02.2020 ideas
+ 
+important notes:
+- 24 px font size!!!!!
+
+- 12 слайд, разбить на 3 слайда с мемами
+
+- Мем с "потрясающий ход!!!!"
+
+- после 22 слайда еще 3 слайда-примерами, чтобы слишком быстро не закончился доклад
+
+- LSTM - attention - позволяет выделять слова из текста и выдавать по ним эмоциональный окрас в коннексте
+
+- cnn (вектор проказывающий, что изображено) -> rnn для генерации текста... 
+
+- про reinforcement learning нужно больше инфы
 
 
 ========================
