@@ -1,0 +1,6 @@
+[submodule "tfjs-examples"]
+	path = tfjs-examples
+	url = git@github.com:tensorflow/tfjs-examples.git
+[submodule "keras-js"]
+	path = keras-js
+	url = git@github.com:transcranial/keras-js.git
