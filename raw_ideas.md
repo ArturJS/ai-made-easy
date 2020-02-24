@@ -320,6 +320,26 @@ __Краткий план__
 Выводы.
 ------------------------
 
+
+## 24.02.2020 ideas
+
+Where to use sentiment analysis for earning money and increacing total revenue.
+
+__Reputation management__ - or you could also call it brand monitoring. We all know how much good reputation means these days when the majority of us check social media reviews as well as review sites before making a purchase decision. I’ll be honest with you - I don’t remember when was the last time that I decided to eat out without checking the reviews of a place beforehand. The same thing applies to buying stuff online, or researching tools I use daily at work as a marketer.
+
+__Customer support__ - social media are channels of communication with your customers these days, and whenever they’re unhappy about something related to you, whether or not it’s your fault, they’ll call you out on Facebook/Twitter/Instagram.
+
+__Competitors monitoring__ - chances are some of your competitors are getting bad press online. It’s where you could step in as long as you’re aware of those negative mentions. I don’t advise to take advantage of whatever they had neglected in an aggressive way, but I highly recommend chiming in conversations when they don’t even bother to reply to the mentions they are getting.
+
+See also for more genuine and delighful information:
+
+ - https://www.quora.com/What-are-the-applications-of-sentiment-analysis-Why-is-it-in-so-much-discussion-and-demand
+ - https://becominghuman.ai/sentiment-analysis-in-marketing-time-to-profit-155b5a1cca7a
+ - https://www.wonderflow.co/blog/sentiment-analysis-examples
+
+
+
+
 ========================
 ## Install chrome extension
 http://www.adambarth.com/experimental/crx/docs/packaging.html
