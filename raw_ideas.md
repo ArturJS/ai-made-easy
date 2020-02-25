@@ -355,6 +355,12 @@ important notes:
 
 - про reinforcement learning нужно больше инфы
 
+Sentiment analysis with tensorflow.js
+https://observablehq.com/@jashkenas/sentiment-analysis-with-tensorflow-js
+
+More advantages of using sentiment analysis in business contexts.
+
+
 
 ========================
 ## Install chrome extension
@@ -372,3 +378,34 @@ Do not lose the private key! Keep the .pem file secret and in a safe place. You'
 
 Update the extension
 Upload the extension to the Chrome Web Store
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+# Misc notes:
+на keras js норм демо https://transcranial.github.io/keras-js/#/imdb-bidirectional-lstm, однако 
+https://observablehq.com/@jashkenas/sentiment-analysis-with-tensorflow-js
+выглядит более простым с точки зрения реализации
+______________________________________________
+p.s. возможно где-то в конце также стоит упомянуть про то, как в будущем машинное обучение будет работать в связке с quantum computing.
+
+# Useful links: https://www.bbc.com/news/world-39706765
+
+
+перед вступительным слайдом должна быть речь, подводка к главной теме!!!!!!
+
+У каждого из нас есть проблемы, проблемы, которые можно решить с помьщью ML!
+Однажды, 1 января я проснулся и понял, что ML это будущее, об этом и не только, мы с вами сегодня и поговорим.
+Важный акцент, который я постараюсь выделить в данном докладе - это то, что ML - это легче, чем кажется)
+
+
+================================================================
+Разработчик JavaScript, с более чем 5 летним опытом production разработки.
+
+Работал в таких компаниях, как епам и опенсофт
+
+================================================================
+
+Небольшой мемчик о том, как это обычно происходит
+===============================
