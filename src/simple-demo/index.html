@@ -1,19 +1,23 @@
-<meta charset="UTF-8">
-<html>
+<!DOCTYPE html>
 <head>
- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.9.0"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.9.0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css"/>
+    <meta charset="UTF-8">
 </head>
 <body>
-  <h1 align=center> Ревью комментариев из instagram (English only)</h1>
-  <textarea id="myInput" rows=4 cols=70>Awesome movie. The characters were really rad</textarea><br><br>
-  <div id="myDiv01" style="font-size:25px">...</div><br><br>
-  <input type=button value="Check Movie Review" onclick="{ mySentiment() }">
- 
- 
- 
- 
- 
-<script src="./main.js"></script>
+    <h1 style="font-size: 36px; font-weight: bold; text-align: center;">
+        Ревью комментариев из instagram (English only)
+    </h1>
+    <textarea id="myInput" rows=4 cols=70 class="textarea" >
+        Awesome movie. The characters were really rad
+    </textarea>
+    <br><br>
+    <div id="myDiv01" style="font-size:25px">...</div><br><br>
+    <button type="button" class="button is-primary" onclick="{ mySentiment() }">
+        Проверить комментарий
+    </button>
+    <script src="./main.js"></script>
 </body>
 </html>

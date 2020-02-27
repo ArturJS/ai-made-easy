@@ -56,12 +56,24 @@ async function mySentiment(model) {
 
     if (pred.dataSync() >= 0.5) {
         document.getElementById('myDiv01').innerHTML =
-            'Wow a positive review ' +
+            'Вау, позитивный комментарий! ' +
+            `<img 
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/samsung/220/smiling-face-with-smiling-eyes_1f60a.png"
+                srcset="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/samsung/220/smiling-face-with-smiling-eyes_1f60a.png 2x" 
+                alt="Smiling Face with Smiling Eyes on Samsung One UI 1.5" width="108" height="108">` +
             (pred.dataSync() * 100).toFixed(0) +
             '%<br>';
     } else {
         document.getElementById('myDiv01').innerHTML =
-            'Kind of negative ' + (pred.dataSync() * 100).toFixed(0) + '%<br>';
+            'Похож на негативный... ' +
+            `<img 
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/236/worried-face_1f61f.png" 
+                srcset="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/236/worried-face_1f61f.png 2x" 
+                alt="Worried Face on Twitter Twemoji 12.1.5" 
+                width="120" 
+                height="120">` +
+            (pred.dataSync() * 100).toFixed(0) +
+            '%<br>';
     }
 }
 
@@ -76,7 +88,8 @@ async function initTrue(model) {
     txt = document.getElementById('myInput').value;
 
     //console.log('Start loading dicionary')
-    document.getElementById('myDiv01').innerHTML = 'Loading, wait a bit';
+    document.getElementById('myDiv01').innerHTML =
+        'Загрузка, готовим печеньки...';
     myDots(); // add some dots
     await loadDict();
 
@@ -87,7 +100,7 @@ async function initTrue(model) {
     //console.log('Finish loading model')
 
     clearInterval(document.myInterval); //  stop adding dots
-    document.getElementById('myDiv01').innerHTML = 'Done';
+    document.getElementById('myDiv01').innerHTML = 'Готово! 😊';
     seq = create_sequences('Love'); // just a testing run
 
     input = tf.tensor(seq);
