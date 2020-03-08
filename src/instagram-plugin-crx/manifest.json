@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Instagram sentiment analysis",
+  "version": "1.0.0",
+  "icons": {
+    "128": "./icons/icon128.png",
+    "64": "./icons/icon128.png",
+    "32": "./icons/icon128.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["tabs", "activeTab", "<all_urls>"],
+  "browser_action": {
+    "default_icon": {
+      "128": "./icons/icon128.png",
+      "64": "./icons/icon128.png",
+      "32": "./icons/icon128.png"
+    },
+    "default_popup": "./popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["entry.js"],
+      "css": ["content.css"]
+    }
+  ]
+}
