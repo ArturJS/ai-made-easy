@@ -1,14 +1,17 @@
+window.SentimentPredictor.intervalId = 0;
+
 async function waitUntil(fn, timeout = Number.MAX_SAFE_INTEGER) {
+    clearInterval(window.SentimentPredictor.intervalId);
     return new Promise((resolve, reject) => {
         let start = Date.now();
-        let intervalId = setInterval(() => {
+        window.SentimentPredictor.intervalId = setInterval(() => {
             if (Date.now() - start > timeout) {
-                clearInterval(intervalId);
+                clearInterval(window.SentimentPredictor.intervalId);
                 reject(
                     new RangeError('Timeout while trying to get comments...')
                 );
             } else if (fn()) {
-                clearInterval(intervalId);
+                clearInterval(window.SentimentPredictor.intervalId);
                 resolve();
             }
         }, 15);
@@ -28,18 +31,40 @@ function extractComments(selector) {
 
 async function getTabComments() {
     let commentsSelector = [
-        '#react-root > section > main > div > div > article >',
-        ' div.eo2As > div.EtaWk > ul > ul > div >',
-        ' li > div > div.C7I1f > div.C4VMK > span'
-    ].join('');
+        `body > div._2dDPU.CkGkG > div.zZYga > div > 
+        article > div.eo2As > div.EtaWk > ul > ul > 
+        div > li > div > div.C7I1f > div.C4VMK > span`,
+
+        `#react-root > section > main > div > div.ltEKP > 
+        article > div.eo2As > div.EtaWk > ul > ul > 
+        div > li > div > div.C7I1f > div.C4VMK > span`,
+
+        `#react-root > section > main > div > div.ltEKP > 
+        article > div.eo2As > div.EtaWk > ul > ul > 
+        li > ul > div > li > div > div.C7I1f > div.C4VMK > span`,
+
+        `body > div._2dDPU.CkGkG > div.zZYga > div > article > div.eo2As > 
+        div.EtaWk > ul > ul:nth-child(2) > li > ul > div:nth-child(2) > 
+        li > div > div.C7I1f > div.C4VMK > span`,
+
+        `#react-root > section > main > section > div:nth-child(2) > 
+        div:nth-child(1) > div > article:nth-child(2) > div.eo2As > 
+        div.Igw0E.IwRSH.eGOV_._4EzTm.XfCBB > div.Igw0E.IwRSH.eGOV_._4EzTm.pjcA_ > 
+        div > span > span`, // should we keep this one?
+
+        `#react-root > section > main > section > div > 
+        div > div > article > div.eo2As > 
+        div.Igw0E.IwRSH.eGOV_._4EzTm.XfCBB > 
+        div > div > div > span > span`
+    ].join(', ');
 
     try {
         await waitUntil(() => !!document.querySelector(commentsSelector));
         let comments = extractComments(commentsSelector);
-        // console.info(comments);
         return comments;
     } catch (error) {
-        console.log(error);
+        console.error(error);
+        throw error;
     }
 }
 
@@ -56,6 +81,11 @@ function getColor(value) {
 async function highlightComments({ sentimentPredictor, comments }) {
     for (let comment of comments) {
         let { element, text } = comment;
+
+        if (!element) {
+            return;
+        }
+
         let degree = await measureComment({ sentimentPredictor, text });
 
         element.style.backgroundColor = getColor(1 - degree);
