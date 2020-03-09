@@ -11,6 +11,7 @@ Chrome extension for sentiment analysis of instagram comments.
 # in order to decrypt instagram-plugin-crx.pem.age
 ./age.exe -d instagram-plugin-crx.pem.age > instagram-plugin-crx.pem
 ```
+https://github.com/FiloSottile/age
 
 ## simple-demo
 Just a regular website for sentiment analysis.
