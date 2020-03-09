@@ -36,8 +36,7 @@ async function getTabComments() {
     try {
         await waitUntil(() => !!document.querySelector(commentsSelector));
         let comments = extractComments(commentsSelector);
-        // todo return comments
-        console.info(comments);
+        // console.info(comments);
         return comments;
     } catch (error) {
         console.log(error);
@@ -49,15 +48,20 @@ async function measureComment(text) {
 }
 
 function getColor(value) {
-    //value is float between 0 and 1
+    //value is a float number between 0 and 1
     let hue = ((1 - value) * 120).toString(10);
     return ['hsl(', hue, ', 100%, 50%)'].join('');
 }
 
 async function highlightComments(comments) {
     for (let comment of comments) {
-        let degree = await measureComment(comment);
-        comment.element.style.backgroundColor = getColor(1 - degree);
+        let { element, text } = comment;
+        let degree = await measureComment(text);
+
+        element.style.backgroundColor = getColor(1 - degree);
+        element.style.borderRadius = '3px';
+        element.style.overflow = 'hidden';
+        element.style.padding = '0 5px';
     }
 }
 
@@ -69,7 +73,7 @@ async function main() {
     while (true) {
         let comments = await getTabComments();
         await highlightComments(comments);
-        await sleep(1000);
+        await sleep(1500);
     }
 }
 
