@@ -43,8 +43,8 @@ async function getTabComments() {
     }
 }
 
-async function measureComment(text) {
-    return Math.random(); // todo use ML algorithm
+async function measureComment({ sentimentPredictor, text }) {
+    return sentimentPredictor.performMeasurement(text);
 }
 
 function getColor(value) {
@@ -53,10 +53,10 @@ function getColor(value) {
     return ['hsl(', hue, ', 100%, 50%)'].join('');
 }
 
-async function highlightComments(comments) {
+async function highlightComments({ sentimentPredictor, comments }) {
     for (let comment of comments) {
         let { element, text } = comment;
-        let degree = await measureComment(text);
+        let degree = await measureComment({ sentimentPredictor, text });
 
         element.style.backgroundColor = getColor(1 - degree);
         element.style.borderRadius = '3px';
@@ -65,16 +65,24 @@ async function highlightComments(comments) {
     }
 }
 
+window.initWatchingComments = async function initWatchingComments() {
+    let sentimentPredictor = SentimentPredictor.create();
+
+    await sentimentPredictor.waitForLoaded();
+
+    while (true) {
+        let comments = await getTabComments();
+        await highlightComments({ sentimentPredictor, comments });
+        await sleep(1500);
+    }
+};
+
 async function main() {
     if (!/instagram.com/.test(location.href)) {
         return;
     }
 
-    while (true) {
-        let comments = await getTabComments();
-        await highlightComments(comments);
-        await sleep(1500);
-    }
+    await initWatchingComments();
 }
 
 main()

@@ -22,8 +22,15 @@
   "content_scripts": [
     {
       "matches": ["https://*/*", "http://*/*"],
-      "js": ["entry.js"],
+      "js": [
+        "sentiment-predictor/tfjs.js",
+        "sentiment-predictor/sentiment-predictor.js",
+        "entry.js"
+      ],
       "css": ["content.css"]
     }
+  ],
+  "web_accessible_resources":[
+    "sentiment-predictor/*"
   ]
 }
